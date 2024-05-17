@@ -1,1 +1,5 @@
-<p>header works!</p>
+@if (_darkModeService.darkModeSignal() === 'dark') {
+  <button class="text-white dark:text-purple-500 bg-gray-900" (click)="toggleDarkmode()">Toggle darkmode</button>
+} @else {
+  <button class="text-white bg-blue-600" (click)="toggleDarkmode()">Toggle lightmode</button>
+}

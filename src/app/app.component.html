@@ -1,4 +1,9 @@
-<app-header />
-<h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+<div [ngClass]="_darkModeService.darkModeSignal()">
+  <div class="min-h-screen min-w-full bg-gray-100 dark:bg-gray-900">
+
+    <app-header />
+    <h1 class="text-gray-950 dark:text-white text-4xl">
+      Hello world!
+    </h1>
+  </div>
+</div>
